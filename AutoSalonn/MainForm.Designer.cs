@@ -40,6 +40,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.FiltrButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -162,11 +163,23 @@
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
             // 
+            // FiltrButton
+            // 
+            this.FiltrButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FiltrButton.Location = new System.Drawing.Point(610, 13);
+            this.FiltrButton.Name = "FiltrButton";
+            this.FiltrButton.Size = new System.Drawing.Size(130, 35);
+            this.FiltrButton.TabIndex = 15;
+            this.FiltrButton.Text = "Фильтр";
+            this.FiltrButton.UseVisualStyleBackColor = true;
+            this.FiltrButton.Click += new System.EventHandler(this.FiltrButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 637);
+            this.Controls.Add(this.FiltrButton);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.button4);
@@ -203,6 +216,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button FiltrButton;
     }
 }
 

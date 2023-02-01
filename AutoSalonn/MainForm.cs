@@ -29,5 +29,11 @@ namespace AutoSalonn
             CarForm car = new CarForm(btn.Text);
             car.Show();
         }
+
+        private void FiltrButton_Click(object sender, EventArgs e)
+        {
+            FiltrForm filtr = new FiltrForm();
+            filtr.ShowDialog();
+        }
     }
 }
