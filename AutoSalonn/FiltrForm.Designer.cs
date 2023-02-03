@@ -39,8 +39,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.kuzovComboBox = new System.Windows.Forms.ComboBox();
+            this.nameComboBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.kppComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,17 +52,18 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(601, 400);
+            this.button2.Location = new System.Drawing.Point(601, 521);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(266, 38);
             this.button2.TabIndex = 16;
             this.button2.Text = "ВАЗ 2121";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(601, 184);
+            this.pictureBox3.Location = new System.Drawing.Point(601, 305);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(266, 210);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -69,17 +73,18 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(309, 400);
+            this.button3.Location = new System.Drawing.Point(309, 521);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(266, 38);
             this.button3.TabIndex = 14;
             this.button3.Text = "Ягуар";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(309, 184);
+            this.pictureBox2.Location = new System.Drawing.Point(309, 305);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(266, 210);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -89,17 +94,18 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 400);
+            this.button1.Location = new System.Drawing.Point(12, 521);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(266, 38);
             this.button1.TabIndex = 12;
             this.button1.Text = "Феррари";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 184);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 305);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(266, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -122,7 +128,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(12, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 18;
@@ -132,7 +138,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Location = new System.Drawing.Point(12, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 25);
             this.label2.TabIndex = 19;
@@ -142,42 +148,80 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(12, 110);
+            this.label3.Location = new System.Drawing.Point(12, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 25);
             this.label3.TabIndex = 20;
             this.label3.Text = "Стоимость, руб.";
             // 
-            // textBox1
+            // priceTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(192, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 30);
-            this.textBox1.TabIndex = 21;
+            this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.priceTextBox.Location = new System.Drawing.Point(192, 178);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(191, 30);
+            this.priceTextBox.TabIndex = 21;
             // 
-            // comboBox1
+            // kuzovComboBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.kuzovComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.kuzovComboBox.FormattingEnabled = true;
+            this.kuzovComboBox.Items.AddRange(new object[] {
             "Седан",
             "Хечбек",
             "Купе",
             "Кабриолет",
             "Универсал"});
-            this.comboBox1.Location = new System.Drawing.Point(192, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(191, 33);
-            this.comboBox1.TabIndex = 22;
+            this.kuzovComboBox.Location = new System.Drawing.Point(192, 86);
+            this.kuzovComboBox.Name = "kuzovComboBox";
+            this.kuzovComboBox.Size = new System.Drawing.Size(191, 33);
+            this.kuzovComboBox.TabIndex = 22;
+            // 
+            // nameComboBox
+            // 
+            this.nameComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameComboBox.FormattingEnabled = true;
+            this.nameComboBox.Items.AddRange(new object[] {
+            "Феррари",
+            "Ягуар",
+            "ВАЗ 2121"});
+            this.nameComboBox.Location = new System.Drawing.Point(192, 36);
+            this.nameComboBox.Name = "nameComboBox";
+            this.nameComboBox.Size = new System.Drawing.Size(191, 33);
+            this.nameComboBox.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(12, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(84, 25);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Модель";
+            // 
+            // kppComboBox
+            // 
+            this.kppComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.kppComboBox.FormattingEnabled = true;
+            this.kppComboBox.Items.AddRange(new object[] {
+            "мкпп",
+            "акпп"});
+            this.kppComboBox.Location = new System.Drawing.Point(192, 130);
+            this.kppComboBox.Name = "kppComboBox";
+            this.kppComboBox.Size = new System.Drawing.Size(191, 33);
+            this.kppComboBox.TabIndex = 25;
             // 
             // FiltrForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 450);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(884, 586);
+            this.Controls.Add(this.kppComboBox);
+            this.Controls.Add(this.nameComboBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.kuzovComboBox);
+            this.Controls.Add(this.priceTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -211,7 +255,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.ComboBox kuzovComboBox;
+        private System.Windows.Forms.ComboBox nameComboBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox kppComboBox;
     }
 }
