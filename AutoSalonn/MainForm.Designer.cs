@@ -45,6 +45,10 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -52,12 +56,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 351);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 336);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(266, 210);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -67,18 +73,18 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 567);
+            this.button1.Location = new System.Drawing.Point(12, 552);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(266, 38);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Феррари";
+            this.button1.Text = "Феррари 599 GTO";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(601, 415);
+            this.pictureBox2.Location = new System.Drawing.Point(579, 336);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(266, 210);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -88,11 +94,11 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(601, 631);
+            this.button3.Location = new System.Drawing.Point(579, 552);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(266, 38);
             this.button3.TabIndex = 7;
-            this.button3.Text = "Ягуар";
+            this.button3.Text = "Ягуар ХК";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -131,18 +137,18 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(12, 839);
+            this.button4.Location = new System.Drawing.Point(12, 824);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(266, 38);
             this.button4.TabIndex = 12;
-            this.button4.Text = "Мерседес";
+            this.button4.Text = "Мерседес SL63";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 623);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 608);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(266, 210);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,17 +158,18 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(309, 839);
+            this.button5.Location = new System.Drawing.Point(294, 552);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(266, 38);
             this.button5.TabIndex = 14;
-            this.button5.Text = "Мерседес";
+            this.button5.Text = "Феррари Портофино";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(309, 623);
+            this.pictureBox5.Location = new System.Drawing.Point(294, 336);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(266, 210);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,8 +194,9 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(266, 38);
             this.button6.TabIndex = 17;
-            this.button6.Text = "ВАЗ 2121";
+            this.button6.Text = "ВАЗ Гранта";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox6
             // 
@@ -207,8 +215,9 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(266, 38);
             this.button7.TabIndex = 19;
-            this.button7.Text = "ВАЗ 2121";
+            this.button7.Text = "ВАЗ Ларгус";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox7
             // 
@@ -220,12 +229,58 @@
             this.pictureBox7.TabIndex = 18;
             this.pictureBox7.TabStop = false;
             // 
+            // button8
+            // 
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(294, 824);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(266, 38);
+            this.button8.TabIndex = 21;
+            this.button8.Text = "Мерседес GLA";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(294, 608);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(266, 210);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 20;
+            this.pictureBox8.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.Location = new System.Drawing.Point(579, 824);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(266, 38);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Мерседес 190";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(579, 608);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(266, 210);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 22;
+            this.pictureBox9.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(904, 587);
+            this.ClientSize = new System.Drawing.Size(906, 750);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.button6);
@@ -252,6 +307,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,6 +331,10 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.PictureBox pictureBox9;
     }
 }
 

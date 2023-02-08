@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoSalonn.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +18,22 @@ namespace AutoSalonn
         public string kpp;
         public int price;
         public Button btn;
-        public PictureBox pic;
+        public PictureBox pb;
 
-        public Car(string _name, string _kuzov, string _kpp, int _price, Button _btn, PictureBox _pic)
+        public Car(string _name, string _kuzov, string _kpp, int _price)
         {
             name = _name;
             kuzov = _kuzov;
             kpp = _kpp;
             price = _price;
-            btn = _btn;
-            pic = _pic;
+            btn = new Button();
+            btn.Text = name;
+            pb = new PictureBox();
+            try
+            {
+                pb.Load("../../Pictures/" + name + ".jpg");             
+            }
+            catch (Exception) { }
         }
     }
 
@@ -38,9 +45,27 @@ namespace AutoSalonn
         {
             InitializeComponent();
 
-            cars_list[0] = new Car("Феррари", "Купе", "мкпп", 1000000, button1,pictureBox1);
-            cars_list[1] = new Car("Ягуар", "Кабриолет", "акпп", 2000000, button3, pictureBox2);
-            cars_list[2] = new Car("ВАЗ 2121", "Универсал", "мкпп", 500000, button2, pictureBox3);
+            cars_list[0] = new Car("Феррари 599 GTO", "Купе", "мкпп", 1000000);
+            cars_list[1] = new Car("Ягуар ХК", "Кабриолет", "акпп", 2000000);
+            cars_list[2] = new Car("ВАЗ 2121", "Универсал", "мкпп", 500000);
+
+            int x = 10;
+            for(int i=0; i<3; i++)
+            {
+                cars_list[i].btn.Font = new Font("Microsoft Sans Serif", 12F);
+                cars_list[i].btn.Location = new Point(x, 200);
+                cars_list[i].btn.Size = new Size(200, 30);
+                cars_list[i].btn.Click += new EventHandler(button1_Click);
+                Controls.Add(cars_list[i].btn);
+
+                cars_list[i].pb.Location = new Point(x, 230);
+                cars_list[i].pb.Size = new Size(200, 200);
+                cars_list[i].pb.SizeMode = PictureBoxSizeMode.Zoom;
+                Controls.Add(cars_list[i].pb);
+
+                x += 210;
+            }
+            
 
         }
 
@@ -54,31 +79,31 @@ namespace AutoSalonn
             for(int i=0; i<3; i++)
             {
                 cars_list[i].btn.Visible = true;
-                cars_list[i].pic.Visible = true;
+                
 
                 if (nameComboBox.Text != "" &&
                     nameComboBox.Text != cars_list[i].name)
                 {
                     cars_list[i].btn.Visible = false;
-                    cars_list[i].pic.Visible = false;
+                    
                 }
                 if (kuzovComboBox.Text != "" &&
                     kuzovComboBox.Text != cars_list[i].kuzov)
                 {
                     cars_list[i].btn.Visible = false;
-                    cars_list[i].pic.Visible = false;
+                   
                 }
                 if (kppComboBox.Text != "" &&
                     kppComboBox.Text != cars_list[i].kpp)
                 {
                     cars_list[i].btn.Visible = false;
-                    cars_list[i].pic.Visible = false;
+                   
                 }
                 if (priceTextBox.Text != "" &&
                     Convert.ToInt32(priceTextBox.Text) < cars_list[i].price)
                 {
                     cars_list[i].btn.Visible = false;
-                    cars_list[i].pic.Visible = false;
+                    
                 }
             }
         }
