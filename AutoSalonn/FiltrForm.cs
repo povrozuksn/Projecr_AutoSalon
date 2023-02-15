@@ -96,8 +96,14 @@ namespace AutoSalonn
                 cars_list[i].btn.Visible = true;
                 cars_list[i].pb.Visible = true;
 
-                if (kuzovComboBox.Text != "" &&
-                    kuzovComboBox.Text != cars_list[i].kuzov)
+                if (KuzovCheckedListBox.CheckedItems.Count > 0 &&
+                    !KuzovCheckedListBox.CheckedItems.Contains(cars_list[i].kuzov))
+                {
+                    cars_list[i].btn.Visible = false;
+                    cars_list[i].pb.Visible = false;
+                }
+                if (NameTextBox.Text != "" &&
+                    !cars_list[i].name.Contains(NameTextBox.Text))
                 {
                     cars_list[i].btn.Visible = false;
                     cars_list[i].pb.Visible = false;
@@ -135,6 +141,23 @@ namespace AutoSalonn
             Button btn = (Button)sender;
             CarForm car = new CarForm(btn.Text);
             car.Show();
+        }
+
+        private void NameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                FindButton_Click(null,null);
+            }
+        }
+
+        private void priceTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                FindButton_Click(null, null);
+            }
+
         }
     }
 }
