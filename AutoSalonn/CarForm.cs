@@ -14,16 +14,19 @@ namespace AutoSalonn
 {
     public partial class CarForm : Form
     {
-        public CarForm(string carName)
+        Car car;
+        public CarForm(Car _car)
         {
+            car = _car;
             InitializeComponent();
 
-            Text = carName;
-            label1.Text = carName;
+            Text = car.name;
+            label1.Text = car.name;
+            PriceLabel.Text = car.price.ToString();
             try
             {
-                pictureBox1.Load("../../Pictures/" + carName + ".jpg");
-                textBox1.Text = File.ReadAllText("../../Pictures/" + carName + ".txt");
+                pictureBox1.Load("../../Pictures/" + car.name + ".jpg");
+                textBox1.Text = File.ReadAllText("../../Pictures/" + car.name + ".txt");
             }
             catch (Exception) { } 
 
@@ -34,5 +37,9 @@ namespace AutoSalonn
 
         }
 
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            SelectedForm.my_car.Add(car);
+        }
     }
 }

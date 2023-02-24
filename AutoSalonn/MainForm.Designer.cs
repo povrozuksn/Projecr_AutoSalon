@@ -49,6 +49,7 @@
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.SelectedButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,7 +80,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Феррари 599 GTO";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox2
             // 
@@ -100,7 +101,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Ягуар ХК";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button1_Click);
+            this.button3.Click += new System.EventHandler(this.CarClick);
             // 
             // HelpButton
             // 
@@ -122,7 +123,7 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "ВАЗ 2121";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button1_Click);
+            this.button2.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox3
             // 
@@ -143,7 +144,7 @@
             this.button4.TabIndex = 12;
             this.button4.Text = "Мерседес SL63";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button1_Click);
+            this.button4.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox4
             // 
@@ -164,7 +165,7 @@
             this.button5.TabIndex = 14;
             this.button5.Text = "Феррари Портофино";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button1_Click);
+            this.button5.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox5
             // 
@@ -196,7 +197,7 @@
             this.button6.TabIndex = 17;
             this.button6.Text = "ВАЗ Гранта";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button1_Click);
+            this.button6.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox6
             // 
@@ -217,7 +218,7 @@
             this.button7.TabIndex = 19;
             this.button7.Text = "ВАЗ Ларгус";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button1_Click);
+            this.button7.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox7
             // 
@@ -238,7 +239,7 @@
             this.button8.TabIndex = 21;
             this.button8.Text = "Мерседес GLA";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button1_Click);
+            this.button8.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox8
             // 
@@ -259,7 +260,7 @@
             this.button9.TabIndex = 23;
             this.button9.Text = "Мерседес 190";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button1_Click);
+            this.button9.Click += new System.EventHandler(this.CarClick);
             // 
             // pictureBox9
             // 
@@ -271,12 +272,24 @@
             this.pictureBox9.TabIndex = 22;
             this.pictureBox9.TabStop = false;
             // 
+            // SelectedButton
+            // 
+            this.SelectedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.SelectedButton.Location = new System.Drawing.Point(438, 14);
+            this.SelectedButton.Name = "SelectedButton";
+            this.SelectedButton.Size = new System.Drawing.Size(162, 33);
+            this.SelectedButton.TabIndex = 24;
+            this.SelectedButton.Text = "Избранное";
+            this.SelectedButton.UseVisualStyleBackColor = true;
+            this.SelectedButton.Click += new System.EventHandler(this.SelectedButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(906, 750);
+            this.ClientSize = new System.Drawing.Size(948, 750);
+            this.Controls.Add(this.SelectedButton);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.button8);
@@ -300,6 +313,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -335,6 +349,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button SelectedButton;
     }
 }
 
