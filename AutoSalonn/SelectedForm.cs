@@ -19,17 +19,10 @@ namespace AutoSalonn
             InitializeComponent();
 
             int x = 10;
-            int y = 150;
+            int y = 10;
 
             foreach (Car car in my_car)
-            {
-                Button btn = new Button();
-                btn.Text = car.btn.Text;
-                btn.Font = new Font("Microsoft Sans Serif", 12F);
-                btn.Location = new Point(x, y);
-                btn.Size = new Size(200, 30);
-                Controls.Add(btn);
-
+            { 
                 PictureBox pb = new PictureBox();
                 pb.Image = car.pb.Image;
                 pb.Location = new Point(x, y);
@@ -37,20 +30,43 @@ namespace AutoSalonn
                 pb.SizeMode = PictureBoxSizeMode.Zoom;
                 Controls.Add(pb);
 
-                Label lbl = new Label();
-                lbl.Text = car.price.ToString();
-                lbl.Font = new Font("Microsoft Sans Serif", 12F);
-                lbl.Location = new Point(x, y+200);
-                lbl.Size = new Size(200, 30);
-                Controls.Add(lbl);
+                Label lbl_name = new Label();
+                lbl_name.Text = "Модель: " + car.name;
+                lbl_name.Font = new Font("Microsoft Sans Serif", 12F);
+                lbl_name.Location = new Point(x+220, y);
+                lbl_name.Size = new Size(200, 30);
+                Controls.Add(lbl_name);
 
+                Label lbl_kuzov = new Label();
+                lbl_kuzov.Text = "Тип кузова: " + car.kuzov;
+                lbl_kuzov.Font = new Font("Microsoft Sans Serif", 12F);
+                lbl_kuzov.Location = new Point(x + 220, y + 50);
+                lbl_kuzov.Size = new Size(200, 30);
+                Controls.Add(lbl_kuzov);
 
-                x += 210;
-                if (x > 620)
-                {
-                    x = 10;
-                    y += 210;
-                }
+                Label lbl_kpp = new Label();
+                lbl_kpp.Text = "Трансмиссия: " + car.kpp;
+                lbl_kpp.Font = new Font("Microsoft Sans Serif", 12F);
+                lbl_kpp.Location = new Point(x + 220, y + 100);
+                lbl_kpp.Size = new Size(200, 30);
+                Controls.Add(lbl_kpp);
+
+                Label lbl_price = new Label();
+                lbl_price.Text = "Цена, руб.: " + car.price.ToString();
+                lbl_price.Font = new Font("Microsoft Sans Serif", 12F);
+                lbl_price.Location = new Point(x + 440, y);
+                lbl_price.Size = new Size(200, 30);
+                Controls.Add(lbl_price);
+
+                Button btn = new Button();
+                btn.Text = car.btn.Text;
+                btn.Font = new Font("Microsoft Sans Serif", 12F);
+                btn.Location = new Point(x + 440, y + 100);
+                btn.Size = new Size(200, 30);
+                Controls.Add(btn);
+
+                y += 210;
+               
             }
 
         }

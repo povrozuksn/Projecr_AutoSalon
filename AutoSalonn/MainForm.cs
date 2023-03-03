@@ -31,7 +31,7 @@ namespace AutoSalonn
         private void FiltrButton_Click(object sender, EventArgs e)
         {
             FiltrForm filtr = new FiltrForm();
-            filtr.Show();
+            filtr.ShowDialog();
         }
 
         private void SelectedButton_Click(object sender, EventArgs e)

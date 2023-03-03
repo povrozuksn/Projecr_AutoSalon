@@ -131,7 +131,7 @@ namespace AutoSalonn
                 if (((Button)sender).Text == cars_list[i].btn.Text)
                 {
                     CarForm car = new CarForm(cars_list[i]);
-                    car.Show();
+                    car.ShowDialog();
                 }
             }
         }
