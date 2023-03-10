@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1140, 516);
+            this.ClientSize = new System.Drawing.Size(1247, 591);
             this.Name = "SelectedForm";
             this.Text = "Выбранные объекты";
             this.Load += new System.EventHandler(this.SelectedForm_Load);

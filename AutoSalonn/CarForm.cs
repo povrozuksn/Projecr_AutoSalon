@@ -39,7 +39,14 @@ namespace AutoSalonn
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            SelectedForm.my_car.Add(car);
+            if (SelectedForm.MyCars.ContainsKey(car))
+            {
+                SelectedForm.MyCars[car]++;
+            }
+            else
+            {
+                SelectedForm.MyCars.Add(car, 1);
+            }
         }
     }
 }
