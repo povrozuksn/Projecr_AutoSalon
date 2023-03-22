@@ -152,7 +152,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.FindButton);
             this.Name = "FiltrForm";
-            this.Text = "Фильтр";
+            this.Text = "Выбери автомобиль";
             this.Load += new System.EventHandler(this.FiltrForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

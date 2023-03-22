@@ -39,7 +39,7 @@ namespace AutoSalonn
 
     public partial class FiltrForm : Form
     {
-        public static Car[] cars_list = new Car[9];
+        public static List<Car> cars_list = new List<Car>();
 
         public FiltrForm()
         {
@@ -48,7 +48,7 @@ namespace AutoSalonn
             int x = 10;
             int y = 150;
 
-            for (int i=0; i< cars_list.Length; i++)
+            for (int i=0; i< cars_list.Count; i++)
             {
                 cars_list[i].btn.Font = new Font("Microsoft Sans Serif", 12F);
                 cars_list[i].btn.Location = new Point(x, y);
@@ -79,7 +79,7 @@ namespace AutoSalonn
         {
             int x = 10;
             int y = 150;
-            for (int i=0; i<cars_list.Length; i++)
+            for (int i=0; i<cars_list.Count; i++)
             {
                 cars_list[i].btn.Visible = true;
                 cars_list[i].pb.Visible = true;
@@ -126,7 +126,7 @@ namespace AutoSalonn
 
         public static void carClick(object sender, EventArgs e)
         {
-            for (int i = 0; i < cars_list.Length; i++)
+            for (int i = 0; i < cars_list.Count; i++)
             {
                 if (((Button)sender).Text == cars_list[i].btn.Text)
                 {

@@ -26,3 +26,4 @@ C:\Users\root\Source\Repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.exe
 C:\Users\root\Source\Repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.pdb
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.FiltrForm.resources
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.SelectedForm.resources
+C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.AddCarForm.resources
