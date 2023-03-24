@@ -52,6 +52,8 @@ namespace AutoSalonn
         {
             AddCarForm addCar = new AddCarForm();
             addCar.ShowDialog();
+
+            MainForm_Load(null, null);
         }
     }
 }

@@ -33,10 +33,18 @@
             this.KPPLabel = new System.Windows.Forms.Label();
             this.PriceLabel = new System.Windows.Forms.Label();
             this.NameTB = new System.Windows.Forms.TextBox();
-            this.KuzovTB = new System.Windows.Forms.TextBox();
             this.PriceTB = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
             this.KppCB = new System.Windows.Forms.ComboBox();
+            this.KuzovCB = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // NameLabel
@@ -82,13 +90,6 @@
             this.NameTB.Size = new System.Drawing.Size(281, 30);
             this.NameTB.TabIndex = 4;
             // 
-            // KuzovTB
-            // 
-            this.KuzovTB.Location = new System.Drawing.Point(247, 76);
-            this.KuzovTB.Name = "KuzovTB";
-            this.KuzovTB.Size = new System.Drawing.Size(281, 30);
-            this.KuzovTB.TabIndex = 5;
-            // 
             // PriceTB
             // 
             this.PriceTB.Location = new System.Drawing.Point(247, 171);
@@ -99,9 +100,9 @@
             // SaveButton
             // 
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.SaveButton.Location = new System.Drawing.Point(0, 268);
+            this.SaveButton.Location = new System.Drawing.Point(0, 415);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(565, 45);
+            this.SaveButton.Size = new System.Drawing.Size(565, 65);
             this.SaveButton.TabIndex = 8;
             this.SaveButton.Text = "Сохранить";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -119,15 +120,103 @@
             this.KppCB.Size = new System.Drawing.Size(281, 33);
             this.KppCB.TabIndex = 9;
             // 
+            // KuzovCB
+            // 
+            this.KuzovCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.KuzovCB.FormattingEnabled = true;
+            this.KuzovCB.Items.AddRange(new object[] {
+            "Седан",
+            "Хечбек",
+            "Купе",
+            "Кабриолет",
+            "Универсал"});
+            this.KuzovCB.Location = new System.Drawing.Point(247, 73);
+            this.KuzovCB.Name = "KuzovCB";
+            this.KuzovCB.Size = new System.Drawing.Size(280, 33);
+            this.KuzovCB.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(250, 219);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(277, 180);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(30, 221);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(198, 64);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Выберите картинку";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(205, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(23, 29);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "*";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(205, 73);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(23, 29);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(205, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 29);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "*";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(205, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 29);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "*";
+            // 
             // AddCarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(565, 313);
+            this.ClientSize = new System.Drawing.Size(565, 480);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.KuzovCB);
             this.Controls.Add(this.KppCB);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.PriceTB);
-            this.Controls.Add(this.KuzovTB);
             this.Controls.Add(this.NameTB);
             this.Controls.Add(this.PriceLabel);
             this.Controls.Add(this.KPPLabel);
@@ -138,6 +227,7 @@
             this.Name = "AddCarForm";
             this.Text = "AddCarForm";
             this.Load += new System.EventHandler(this.AddCarForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,9 +240,16 @@
         private System.Windows.Forms.Label KPPLabel;
         private System.Windows.Forms.Label PriceLabel;
         private System.Windows.Forms.TextBox NameTB;
-        private System.Windows.Forms.TextBox KuzovTB;
         private System.Windows.Forms.TextBox PriceTB;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.ComboBox KppCB;
+        private System.Windows.Forms.ComboBox KuzovCB;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
