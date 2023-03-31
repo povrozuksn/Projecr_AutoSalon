@@ -41,6 +41,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.AddCarCcontextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.добавитьМашинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьМашинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -153,9 +154,10 @@
             // 
             this.AddCarCcontextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.AddCarCcontextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.добавитьМашинуToolStripMenuItem});
+            this.добавитьМашинуToolStripMenuItem,
+            this.удалитьМашинуToolStripMenuItem});
             this.AddCarCcontextMenuStrip.Name = "AddCarCcontextMenuStrip";
-            this.AddCarCcontextMenuStrip.Size = new System.Drawing.Size(211, 56);
+            this.AddCarCcontextMenuStrip.Size = new System.Drawing.Size(211, 80);
             // 
             // добавитьМашинуToolStripMenuItem
             // 
@@ -163,6 +165,13 @@
             this.добавитьМашинуToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
             this.добавитьМашинуToolStripMenuItem.Text = "Добавить машину";
             this.добавитьМашинуToolStripMenuItem.Click += new System.EventHandler(this.добавитьМашинуToolStripMenuItem_Click);
+            // 
+            // удалитьМашинуToolStripMenuItem
+            // 
+            this.удалитьМашинуToolStripMenuItem.Name = "удалитьМашинуToolStripMenuItem";
+            this.удалитьМашинуToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.удалитьМашинуToolStripMenuItem.Text = "Удалить машину";
+            this.удалитьМашинуToolStripMenuItem.Click += new System.EventHandler(this.удалитьМашинуToolStripMenuItem_Click);
             // 
             // MainForm
             // 
@@ -210,6 +219,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.ContextMenuStrip AddCarCcontextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem добавитьМашинуToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьМашинуToolStripMenuItem;
     }
 }
 

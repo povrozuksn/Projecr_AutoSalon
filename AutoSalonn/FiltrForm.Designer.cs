@@ -37,13 +37,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.KuzovCheckedListBox = new System.Windows.Forms.CheckedListBox();
+            this.FiltrPanel = new System.Windows.Forms.Panel();
+            this.CarsPanel = new System.Windows.Forms.Panel();
+            this.FiltrPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // FindButton
             // 
             this.FindButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.FindButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FindButton.Location = new System.Drawing.Point(744, 12);
+            this.FindButton.Location = new System.Drawing.Point(747, 19);
             this.FindButton.Name = "FindButton";
             this.FindButton.Size = new System.Drawing.Size(128, 37);
             this.FindButton.TabIndex = 17;
@@ -55,7 +58,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(389, 12);
+            this.label1.Location = new System.Drawing.Point(392, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 18;
@@ -65,7 +68,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(12, 64);
+            this.label2.Location = new System.Drawing.Point(15, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 25);
             this.label2.TabIndex = 19;
@@ -75,7 +78,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(12, 111);
+            this.label3.Location = new System.Drawing.Point(15, 118);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 25);
             this.label3.TabIndex = 20;
@@ -84,7 +87,7 @@
             // priceTextBox
             // 
             this.priceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.priceTextBox.Location = new System.Drawing.Point(192, 111);
+            this.priceTextBox.Location = new System.Drawing.Point(195, 118);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(191, 30);
             this.priceTextBox.TabIndex = 21;
@@ -97,7 +100,7 @@
             this.kppComboBox.Items.AddRange(new object[] {
             "мкпп",
             "акпп"});
-            this.kppComboBox.Location = new System.Drawing.Point(192, 61);
+            this.kppComboBox.Location = new System.Drawing.Point(195, 68);
             this.kppComboBox.Name = "kppComboBox";
             this.kppComboBox.Size = new System.Drawing.Size(191, 33);
             this.kppComboBox.TabIndex = 25;
@@ -106,7 +109,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(12, 17);
+            this.label4.Location = new System.Drawing.Point(15, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 25);
             this.label4.TabIndex = 26;
@@ -115,7 +118,7 @@
             // NameTextBox
             // 
             this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameTextBox.Location = new System.Drawing.Point(192, 12);
+            this.NameTextBox.Location = new System.Drawing.Point(195, 19);
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(191, 30);
             this.NameTextBox.TabIndex = 27;
@@ -131,31 +134,50 @@
             "Купе",
             "Кабриолет",
             "Универсал"});
-            this.KuzovCheckedListBox.Location = new System.Drawing.Point(507, 12);
+            this.KuzovCheckedListBox.Location = new System.Drawing.Point(510, 19);
             this.KuzovCheckedListBox.Name = "KuzovCheckedListBox";
             this.KuzovCheckedListBox.Size = new System.Drawing.Size(202, 129);
             this.KuzovCheckedListBox.TabIndex = 28;
+            // 
+            // FiltrPanel
+            // 
+            this.FiltrPanel.Controls.Add(this.label4);
+            this.FiltrPanel.Controls.Add(this.KuzovCheckedListBox);
+            this.FiltrPanel.Controls.Add(this.FindButton);
+            this.FiltrPanel.Controls.Add(this.NameTextBox);
+            this.FiltrPanel.Controls.Add(this.label1);
+            this.FiltrPanel.Controls.Add(this.label2);
+            this.FiltrPanel.Controls.Add(this.kppComboBox);
+            this.FiltrPanel.Controls.Add(this.label3);
+            this.FiltrPanel.Controls.Add(this.priceTextBox);
+            this.FiltrPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.FiltrPanel.Location = new System.Drawing.Point(0, 0);
+            this.FiltrPanel.Name = "FiltrPanel";
+            this.FiltrPanel.Size = new System.Drawing.Size(884, 163);
+            this.FiltrPanel.TabIndex = 29;
+            // 
+            // CarsPanel
+            // 
+            this.CarsPanel.AutoScroll = true;
+            this.CarsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CarsPanel.Location = new System.Drawing.Point(0, 163);
+            this.CarsPanel.Name = "CarsPanel";
+            this.CarsPanel.Size = new System.Drawing.Size(884, 423);
+            this.CarsPanel.TabIndex = 30;
             // 
             // FiltrForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(884, 586);
-            this.Controls.Add(this.KuzovCheckedListBox);
-            this.Controls.Add(this.NameTextBox);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.kppComboBox);
-            this.Controls.Add(this.priceTextBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.FindButton);
+            this.Controls.Add(this.CarsPanel);
+            this.Controls.Add(this.FiltrPanel);
             this.Name = "FiltrForm";
             this.Text = "Выбери автомобиль";
             this.Load += new System.EventHandler(this.FiltrForm_Load);
+            this.FiltrPanel.ResumeLayout(false);
+            this.FiltrPanel.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -169,5 +191,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.CheckedListBox KuzovCheckedListBox;
+        private System.Windows.Forms.Panel FiltrPanel;
+        private System.Windows.Forms.Panel CarsPanel;
     }
 }

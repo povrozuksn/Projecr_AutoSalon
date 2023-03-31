@@ -38,6 +38,7 @@ namespace AutoSalonn
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            FiltrForm.cars_list.Clear();
             string[] strs = File.ReadAllLines("cars.txt");
 
             foreach (string str in strs)
@@ -52,6 +53,14 @@ namespace AutoSalonn
         {
             AddCarForm addCar = new AddCarForm();
             addCar.ShowDialog();
+
+            MainForm_Load(null, null);
+        }
+
+        private void удалитьМашинуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DelCarForm delCar = new DelCarForm();
+            delCar.ShowDialog();
 
             MainForm_Load(null, null);
         }

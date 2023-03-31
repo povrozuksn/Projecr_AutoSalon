@@ -17,7 +17,6 @@ namespace AutoSalonn
         public AddCarForm()
         {
             InitializeComponent();
-            Text = "Добавление машины";
         }
 
         private void AddCarForm_Load(object sender, EventArgs e)
@@ -40,12 +39,12 @@ namespace AutoSalonn
                 return;
             }
 
-            File.AppendAllText("cars.txt", 
-                Environment.NewLine + 
+            File.AppendAllText("cars.txt",                 
                 NameTB.Text + ", " + 
                 KuzovCB.Text + ", " + 
                 KppCB.Text + ", " +
-                PriceTB.Text);
+                PriceTB.Text +
+                Environment.NewLine);
 
             if(FileNme != "")
             {

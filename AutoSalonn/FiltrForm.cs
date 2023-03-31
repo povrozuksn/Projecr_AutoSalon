@@ -46,7 +46,7 @@ namespace AutoSalonn
             InitializeComponent();
 
             int x = 10;
-            int y = 150;
+            int y = 10;
 
             for (int i=0; i< cars_list.Count; i++)
             {
@@ -54,12 +54,12 @@ namespace AutoSalonn
                 cars_list[i].btn.Location = new Point(x, y);
                 cars_list[i].btn.Size = new Size(200, 30);
                 cars_list[i].btn.Click += new EventHandler(carClick);
-                Controls.Add(cars_list[i].btn);
+                CarsPanel.Controls.Add(cars_list[i].btn);
 
                 cars_list[i].pb.Location = new Point(x, y);
                 cars_list[i].pb.Size = new Size(200, 200);
                 cars_list[i].pb.SizeMode = PictureBoxSizeMode.Zoom;
-                Controls.Add(cars_list[i].pb);
+                CarsPanel.Controls.Add(cars_list[i].pb);
 
                 x += 210;
                 if(x > 620)
@@ -78,7 +78,7 @@ namespace AutoSalonn
         private void FindButton_Click(object sender, EventArgs e)
         {
             int x = 10;
-            int y = 150;
+            int y = 10;
             for (int i=0; i<cars_list.Count; i++)
             {
                 cars_list[i].btn.Visible = true;

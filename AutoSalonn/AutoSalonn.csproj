@@ -58,6 +58,12 @@
     <Compile Include="CarForm.Designer.cs">
       <DependentUpon>CarForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DelCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelCarForm.Designer.cs">
+      <DependentUpon>DelCarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FiltrForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CarForm.resx">
       <DependentUpon>CarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelCarForm.resx">
+      <DependentUpon>DelCarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FiltrForm.resx">
       <DependentUpon>FiltrForm.cs</DependentUpon>
