@@ -42,6 +42,7 @@
             this.AddCarCcontextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.добавитьМашинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьМашинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -76,7 +77,7 @@
             this.HelpButton.BackColor = System.Drawing.Color.Black;
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpButton.ForeColor = System.Drawing.Color.White;
-            this.HelpButton.Location = new System.Drawing.Point(517, 267);
+            this.HelpButton.Location = new System.Drawing.Point(517, 231);
             this.HelpButton.Name = "HelpButton";
             this.HelpButton.Size = new System.Drawing.Size(149, 61);
             this.HelpButton.TabIndex = 8;
@@ -87,7 +88,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(407, 372);
+            this.pictureBox4.Location = new System.Drawing.Point(410, 407);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(200, 134);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,7 +110,7 @@
             this.FiltrButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.FiltrButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FiltrButton.ForeColor = System.Drawing.Color.White;
-            this.FiltrButton.Location = new System.Drawing.Point(313, 177);
+            this.FiltrButton.Location = new System.Drawing.Point(313, 160);
             this.FiltrButton.Name = "FiltrButton";
             this.FiltrButton.Size = new System.Drawing.Size(353, 64);
             this.FiltrButton.TabIndex = 15;
@@ -122,7 +123,7 @@
             this.SelectedButton.BackColor = System.Drawing.Color.Black;
             this.SelectedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.SelectedButton.ForeColor = System.Drawing.Color.White;
-            this.SelectedButton.Location = new System.Drawing.Point(313, 267);
+            this.SelectedButton.Location = new System.Drawing.Point(313, 231);
             this.SelectedButton.Name = "SelectedButton";
             this.SelectedButton.Size = new System.Drawing.Size(189, 61);
             this.SelectedButton.TabIndex = 24;
@@ -157,21 +158,32 @@
             this.добавитьМашинуToolStripMenuItem,
             this.удалитьМашинуToolStripMenuItem});
             this.AddCarCcontextMenuStrip.Name = "AddCarCcontextMenuStrip";
-            this.AddCarCcontextMenuStrip.Size = new System.Drawing.Size(211, 80);
+            this.AddCarCcontextMenuStrip.Size = new System.Drawing.Size(206, 52);
             // 
             // добавитьМашинуToolStripMenuItem
             // 
             this.добавитьМашинуToolStripMenuItem.Name = "добавитьМашинуToolStripMenuItem";
-            this.добавитьМашинуToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.добавитьМашинуToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
             this.добавитьМашинуToolStripMenuItem.Text = "Добавить машину";
             this.добавитьМашинуToolStripMenuItem.Click += new System.EventHandler(this.добавитьМашинуToolStripMenuItem_Click);
             // 
             // удалитьМашинуToolStripMenuItem
             // 
             this.удалитьМашинуToolStripMenuItem.Name = "удалитьМашинуToolStripMenuItem";
-            this.удалитьМашинуToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.удалитьМашинуToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
             this.удалитьМашинуToolStripMenuItem.Text = "Удалить машину";
             this.удалитьМашинуToolStripMenuItem.Click += new System.EventHandler(this.удалитьМашинуToolStripMenuItem_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(432, 314);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(151, 44);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Войти";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
@@ -182,6 +194,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.ContextMenuStrip = this.AddCarCcontextMenuStrip;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.SelectedButton);
@@ -220,6 +233,7 @@
         private System.Windows.Forms.ContextMenuStrip AddCarCcontextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem добавитьМашинуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem удалитьМашинуToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 

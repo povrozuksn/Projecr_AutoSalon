@@ -64,5 +64,11 @@ namespace AutoSalonn
 
             MainForm_Load(null, null);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AuthForm auth = new AuthForm();
+            auth.ShowDialog();
+        }
     }
 }
