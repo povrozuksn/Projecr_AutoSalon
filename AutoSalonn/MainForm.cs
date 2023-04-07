@@ -51,24 +51,56 @@ namespace AutoSalonn
 
         private void добавитьМашинуToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddCarForm addCar = new AddCarForm();
-            addCar.ShowDialog();
+            if (AuthForm.isAdmin)
+            {
+                AddCarForm addCar = new AddCarForm();
+                addCar.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Изменения может производить только админитсратор");
+            }
 
             MainForm_Load(null, null);
         }
 
         private void удалитьМашинуToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DelCarForm delCar = new DelCarForm();
-            delCar.ShowDialog();
+            if (AuthForm.isAdmin)
+            {
+                DelCarForm delCar = new DelCarForm();
+                delCar.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Изменения может производить только админитсратор");
+            }
 
             MainForm_Load(null, null);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AuthForm auth = new AuthForm();
-            auth.ShowDialog();
+            if (AuthForm.name == "")
+            {                
+                AuthForm auth = new AuthForm();
+                auth.ShowDialog();
+            }
+            else
+            {
+                AuthForm.name = "";
+            }
+
+            if (AuthForm.name == "")
+            {
+                UserLabel.Text = "" ;
+                button1.Text = "Войти";
+            }
+            else
+            {
+                UserLabel.Text = "Вы авторизовались как  " + AuthForm.name + " " + AuthForm.secname;
+                button1.Text = "Выйти";
+            }
         }
     }
 }

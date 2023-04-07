@@ -43,6 +43,7 @@
             this.добавитьМашинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьМашинуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
+            this.UserLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -177,13 +178,26 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(432, 314);
+            this.button1.Location = new System.Drawing.Point(433, 357);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 44);
             this.button1.TabIndex = 27;
             this.button1.Text = "Войти";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // UserLabel
+            // 
+            this.UserLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.UserLabel.AutoSize = true;
+            this.UserLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UserLabel.Location = new System.Drawing.Point(289, 301);
+            this.UserLabel.Name = "UserLabel";
+            this.UserLabel.Size = new System.Drawing.Size(0, 25);
+            this.UserLabel.TabIndex = 28;
+            this.UserLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -194,6 +208,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.ContextMenuStrip = this.AddCarCcontextMenuStrip;
+            this.Controls.Add(this.UserLabel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox3);
@@ -216,6 +231,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.AddCarCcontextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -234,6 +250,7 @@
         private System.Windows.Forms.ToolStripMenuItem добавитьМашинуToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem удалитьМашинуToolStripMenuItem;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label UserLabel;
     }
 }
 

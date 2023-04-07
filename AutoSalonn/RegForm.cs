@@ -31,8 +31,11 @@ namespace AutoSalonn
                                 NameTB.Text + ", " +
                                 SecNameTB.Text + ", " +
                                 LoginTB.Text + ", " +
-                                Pas1TB.Text +
+                                Pas1TB.Text + ", 0" +
                                 Environment.NewLine);
+
+                MessageBox.Show("Регистрация прошла успешно");
+                Close();
             }
             else MessageBox.Show("Пароли не совпадают");
             

@@ -47,6 +47,7 @@
             this.InpButton.TabIndex = 0;
             this.InpButton.Text = "Войти";
             this.InpButton.UseVisualStyleBackColor = true;
+            this.InpButton.Click += new System.EventHandler(this.InpButton_Click);
             // 
             // label1
             // 
