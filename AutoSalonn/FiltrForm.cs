@@ -62,7 +62,7 @@ namespace AutoSalonn
                 CarsPanel.Controls.Add(cars_list[i].pb);
 
                 x += 210;
-                if(x > 620)
+                if(x + 200 > CarsPanel.Width)
                 {
                     x = 10;
                     y += 210;
@@ -115,7 +115,7 @@ namespace AutoSalonn
                     cars_list[i].pb.Location = new Point(x, y);
 
                     x += 210;
-                    if (x > 620)
+                    if (x + 200 > CarsPanel.Width)
                     {
                         x = 10;
                         y += 210;
@@ -151,6 +151,25 @@ namespace AutoSalonn
                 FindButton_Click(null, null);
             }
 
+        }
+
+        private void CarsPanel_Resize(object sender, EventArgs e)
+        {
+            FindButton_Click(null, null);
+        }
+
+        private void HideButton_Click(object sender, EventArgs e)
+        {
+            if(HideButton.Text == "Скрыть фильтр")
+            {
+                FiltrPanel.Height = 30;
+                HideButton.Text = "Раскрыть фильтр";
+            }
+            else if (HideButton.Text == "Раскрыть фильтр")
+            {
+                FiltrPanel.Height = 200;
+                HideButton.Text = "Скрыть фильтр";
+            }
         }
     }
 }

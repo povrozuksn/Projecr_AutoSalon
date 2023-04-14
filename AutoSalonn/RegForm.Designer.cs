@@ -79,6 +79,7 @@
             // 
             this.Pas1TB.Location = new System.Drawing.Point(12, 268);
             this.Pas1TB.Name = "Pas1TB";
+            this.Pas1TB.PasswordChar = '*';
             this.Pas1TB.Size = new System.Drawing.Size(287, 30);
             this.Pas1TB.TabIndex = 7;
             // 
@@ -124,6 +125,7 @@
             // 
             this.Pas2TB.Location = new System.Drawing.Point(12, 346);
             this.Pas2TB.Name = "Pas2TB";
+            this.Pas2TB.PasswordChar = '*';
             this.Pas2TB.Size = new System.Drawing.Size(287, 30);
             this.Pas2TB.TabIndex = 10;
             // 

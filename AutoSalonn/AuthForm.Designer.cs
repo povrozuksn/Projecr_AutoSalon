@@ -72,6 +72,7 @@
             this.PasTB.Location = new System.Drawing.Point(13, 114);
             this.PasTB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PasTB.Name = "PasTB";
+            this.PasTB.PasswordChar = '*';
             this.PasTB.Size = new System.Drawing.Size(240, 30);
             this.PasTB.TabIndex = 4;
             // 
