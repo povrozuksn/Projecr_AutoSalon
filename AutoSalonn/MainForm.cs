@@ -102,5 +102,11 @@ namespace AutoSalonn
                 button1.Text = "Выйти";
             }
         }
+
+        private void FeedBackButton_Click(object sender, EventArgs e)
+        {
+            FeedBackForm feedBack = new FeedBackForm();
+            feedBack.ShowDialog();
+        }
     }
 }

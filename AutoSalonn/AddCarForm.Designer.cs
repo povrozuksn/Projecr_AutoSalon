@@ -45,6 +45,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.InfoTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,7 +105,7 @@
             this.SaveButton.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.SaveButton.Location = new System.Drawing.Point(0, 466);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(551, 65);
+            this.SaveButton.Size = new System.Drawing.Size(1007, 65);
             this.SaveButton.TabIndex = 8;
             this.SaveButton.Text = "Сохранить";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -212,11 +214,30 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Добавление машины";
             // 
+            // InfoTextBox
+            // 
+            this.InfoTextBox.Location = new System.Drawing.Point(557, 76);
+            this.InfoTextBox.Multiline = true;
+            this.InfoTextBox.Name = "InfoTextBox";
+            this.InfoTextBox.Size = new System.Drawing.Size(435, 369);
+            this.InfoTextBox.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(552, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(302, 25);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Добавление описания машины";
+            // 
             // AddCarForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(551, 531);
+            this.ClientSize = new System.Drawing.Size(1007, 531);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.InfoTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -263,5 +284,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox InfoTextBox;
+        private System.Windows.Forms.Label label6;
     }
 }

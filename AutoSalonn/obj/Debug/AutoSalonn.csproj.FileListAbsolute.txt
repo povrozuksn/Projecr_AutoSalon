@@ -30,3 +30,4 @@ C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.Add
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.DelCarForm.resources
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.AuthForm.resources
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.RegForm.resources
+C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.FeedBackForm.resources

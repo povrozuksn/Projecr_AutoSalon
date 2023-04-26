@@ -51,6 +51,8 @@ namespace AutoSalonn
                 File.Copy(FileNme, "../../Pictures/" + NameTB.Text + ".jpg");
             }
 
+            File.AppendAllText("../../Pictures/" + NameTB.Text + ".txt", InfoTextBox.Text);
+
             MessageBox.Show("Сохранено");
 
             Close();

@@ -26,9 +26,14 @@ namespace AutoSalonn
             try
             {
                 pictureBox1.Load("../../Pictures/" + car.name + ".jpg");
+            }
+            catch (Exception) { }
+
+            try
+            {
                 textBox1.Text = File.ReadAllText("../../Pictures/" + car.name + ".txt");
             }
-            catch (Exception) { } 
+            catch (Exception) { }
 
         }
 
