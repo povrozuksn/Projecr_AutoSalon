@@ -31,3 +31,4 @@ C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.Del
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.AuthForm.resources
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.RegForm.resources
 C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.FeedBackForm.resources
+C:\Users\root\source\repos\Projecr_AutoSalon\AutoSalonn\obj\Debug\AutoSalonn.SendMailForm.resources

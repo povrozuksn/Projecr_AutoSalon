@@ -23,6 +23,7 @@ namespace AutoSalonn
         void ReDraw()
         {
             Controls.Clear();
+            Controls.Add(SendButton);
 
             int x = 10;
             int y = 10;
@@ -128,6 +129,12 @@ namespace AutoSalonn
         private void SelectedForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void SendButton_Click(object sender, EventArgs e)
+        {
+            SendMailForm mailForm = new SendMailForm();
+            mailForm.ShowDialog();
         }
     }
 }
