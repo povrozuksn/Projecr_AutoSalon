@@ -46,15 +46,13 @@ namespace AutoSalonn
                     mailMessage.Body = "Здравствуйте. " + Environment.NewLine + "Мы прислали Вам список выбранных автомобилей в нашем приложении.";
                     mailMessage.IsBodyHtml = true;
 
-                    
-
-                    File.AppendAllText("Избранное.csv", "Название,Количество,Цена");
+                    File.AppendAllText("Избранное.csv", "Название;Количество;Цена");
                     foreach(KeyValuePair<Car, int> myCar in SelectedForm.MyCars)
                     {
                         Car car = myCar.Key;
                         File.AppendAllText("Избранное.csv",
                             Environment.NewLine +
-                            car.name + "," + myCar.Value + "," + car.price);
+                            car.name + ";" + myCar.Value + ";" + car.price);
                     }
 
                     mailMessage.Attachments.Add(new Attachment("Избранное.csv"));
