@@ -77,6 +77,7 @@
             // HelpButton
             // 
             this.HelpButton.BackColor = System.Drawing.Color.Black;
+            this.HelpButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.HelpButton.ForeColor = System.Drawing.Color.White;
             this.HelpButton.Location = new System.Drawing.Point(517, 231);
@@ -110,6 +111,7 @@
             // FiltrButton
             // 
             this.FiltrButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.FiltrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FiltrButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FiltrButton.ForeColor = System.Drawing.Color.White;
             this.FiltrButton.Location = new System.Drawing.Point(313, 160);
@@ -123,6 +125,7 @@
             // SelectedButton
             // 
             this.SelectedButton.BackColor = System.Drawing.Color.Black;
+            this.SelectedButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SelectedButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.SelectedButton.ForeColor = System.Drawing.Color.White;
             this.SelectedButton.Location = new System.Drawing.Point(313, 231);
@@ -178,6 +181,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(433, 357);
             this.button1.Name = "button1";
@@ -202,7 +206,9 @@
             // 
             // FeedBackButton
             // 
+            this.FeedBackButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.FeedBackButton.BackColor = System.Drawing.Color.Black;
+            this.FeedBackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FeedBackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FeedBackButton.ForeColor = System.Drawing.Color.White;
             this.FeedBackButton.Location = new System.Drawing.Point(755, 497);
@@ -218,7 +224,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 553);
             this.ContextMenuStrip = this.AddCarCcontextMenuStrip;
@@ -238,6 +244,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Resize += new System.EventHandler(this.MainForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
