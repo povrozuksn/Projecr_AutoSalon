@@ -101,6 +101,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "FeedBackForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FeedBackForm";
             this.ResumeLayout(false);
             this.PerformLayout();

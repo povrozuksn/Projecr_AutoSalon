@@ -14,3 +14,8 @@ Nissan Kicks, Универсал, мкпп, 200000
 Nissan Terrano, Универсал, мкпп, 300000
 Nissan X-Trail, Универсал, мкпп, 500000
 Жигули 2101, Седан, мкпп, 5000
+Toyota Corolla, Седан, акпп, 2000000
+Toyota Camry, Хечбек, акпп, 2500000
+Toyota C-HR, Универсал, акпп, 3000000
+Toyota RAV4, Универсал, мкпп, 2600000
+Toyota Land Cruiser Prado, Универсал, акпп, 6500000

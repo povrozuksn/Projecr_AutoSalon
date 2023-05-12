@@ -51,6 +51,7 @@
             this.ClientSize = new System.Drawing.Size(1247, 591);
             this.Controls.Add(this.SendButton);
             this.Name = "SelectedForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Выбранные объекты";
             this.Load += new System.EventHandler(this.SelectedForm_Load);
             this.ResumeLayout(false);

@@ -38,14 +38,14 @@
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.KuzovCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.FiltrPanel = new System.Windows.Forms.Panel();
-            this.CarsPanel = new System.Windows.Forms.Panel();
             this.HideButton = new System.Windows.Forms.Button();
+            this.CarsPanel = new System.Windows.Forms.Panel();
             this.FiltrPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // FindButton
             // 
-            this.FindButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.FindButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.FindButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FindButton.Location = new System.Drawing.Point(744, 51);
             this.FindButton.Name = "FindButton";
@@ -142,6 +142,7 @@
             // 
             // FiltrPanel
             // 
+            this.FiltrPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.FiltrPanel.Controls.Add(this.HideButton);
             this.FiltrPanel.Controls.Add(this.label4);
             this.FiltrPanel.Controls.Add(this.KuzovCheckedListBox);
@@ -158,16 +159,6 @@
             this.FiltrPanel.Size = new System.Drawing.Size(1095, 200);
             this.FiltrPanel.TabIndex = 29;
             // 
-            // CarsPanel
-            // 
-            this.CarsPanel.AutoScroll = true;
-            this.CarsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CarsPanel.Location = new System.Drawing.Point(0, 200);
-            this.CarsPanel.Name = "CarsPanel";
-            this.CarsPanel.Size = new System.Drawing.Size(1095, 386);
-            this.CarsPanel.TabIndex = 30;
-            this.CarsPanel.Resize += new System.EventHandler(this.CarsPanel_Resize);
-            // 
             // HideButton
             // 
             this.HideButton.Location = new System.Drawing.Point(13, 0);
@@ -178,6 +169,16 @@
             this.HideButton.UseVisualStyleBackColor = true;
             this.HideButton.Click += new System.EventHandler(this.HideButton_Click);
             // 
+            // CarsPanel
+            // 
+            this.CarsPanel.AutoScroll = true;
+            this.CarsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CarsPanel.Location = new System.Drawing.Point(0, 200);
+            this.CarsPanel.Name = "CarsPanel";
+            this.CarsPanel.Size = new System.Drawing.Size(1095, 386);
+            this.CarsPanel.TabIndex = 30;
+            this.CarsPanel.Resize += new System.EventHandler(this.CarsPanel_Resize);
+            // 
             // FiltrForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -186,6 +187,7 @@
             this.Controls.Add(this.CarsPanel);
             this.Controls.Add(this.FiltrPanel);
             this.Name = "FiltrForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Выбери автомобиль";
             this.Load += new System.EventHandler(this.FiltrForm_Load);
             this.FiltrPanel.ResumeLayout(false);

@@ -13,6 +13,7 @@ namespace AutoSalonn
     public partial class SelectedForm : Form
     {
         public static Dictionary<Car, int> MyCars = new Dictionary<Car, int>();
+        int TotalPrice = 0;
 
         public SelectedForm()
         {
@@ -99,9 +100,15 @@ namespace AutoSalonn
                 #endregion
 
                 y += 210;
-
+                TotalPrice += (car.price * myCar.Value);
             }
 
+            Label lbl_totalprice = new Label();
+            lbl_totalprice.Text = "Общая стоимость, руб.: " + TotalPrice.ToString();
+            lbl_totalprice.Font = new Font("Microsoft Sans Serif", 12F);
+            lbl_totalprice.Location = new Point(x + 440, y + AutoScrollPosition.Y);
+            lbl_totalprice.Size = new Size(400, 30);
+            Controls.Add(lbl_totalprice);
         }
 
         void DeleteClick(object sender, EventArgs e)
